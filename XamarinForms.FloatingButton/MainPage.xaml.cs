@@ -17,5 +17,16 @@ namespace XamarinForms.FloatingButton
         {
             InitializeComponent();
         }
+
+        private void PlayAnimation_Clicked(System.Object sender, System.EventArgs e)
+        {
+            FloatingButton.Scale = 0;
+            FloatingButton.ScaleTo(1, easing: Easing.SpringOut);
+        }
+
+        private void PlayAnimationReset_Clicked(System.Object sender, System.EventArgs e)
+        {
+            FloatingButton.Scale = 0;
+        }
     }
 }

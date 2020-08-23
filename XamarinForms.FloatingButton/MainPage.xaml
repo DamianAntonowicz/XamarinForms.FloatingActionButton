@@ -27,8 +27,16 @@
 
     <StackLayout VerticalOptions="Center">
 
-        <Button ImageSource="{StaticResource FontImageSourcePlusGlyph}"
+        <Button Text="reset"
+                Clicked="PlayAnimationReset_Clicked"/>
+
+        <Button Text="play"
+                Clicked="PlayAnimation_Clicked"/>
+
+        <Button x:Name="FloatingButton"
+                ImageSource="{StaticResource FontImageSourcePlusGlyph}"
                 TextColor="White"
+                Scale="0"
                 BackgroundColor="Blue"
                 FontSize="50"
                 CornerRadius="28"
