@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:awesome="clr-namespace:FontAwesome"
+             x:Class="XamarinForms.FloatingButton.FloatingButton"
+             x:Name="FloatingButtonRoot">
+
+    <ContentView.Resources>
+
+        <FontImageSource x:Key="FontImageSourcePlusGlyph"
+                         Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
+                         Color="{Binding TextColor, Source={x:Reference FloatingButtonRoot}}"
+                         FontFamily="FontAwesomeSolid">
+            <FontImageSource.Size>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="Android"
+                        Value="30" />
+                    <On Platform="iOS"
+                        Value="60" />
+                </OnPlatform>
+            </FontImageSource.Size>
+        </FontImageSource>
+
+    </ContentView.Resources>
+
+    <Button x:Name="Button"
+            ImageSource="{StaticResource FontImageSourcePlusGlyph}"
+            TextColor="{Binding TextColor, Source={x:Reference FloatingButtonRoot}}"
+            BackgroundColor="{Binding BackgroundColor, Source={x:Reference FloatingButtonRoot}}"
+            Command="{Binding Command, Source={x:Reference FloatingButtonRoot}}"
+            Clicked="Button_OnClicked"
+            Scale="0"
+            FontSize="50"
+            CornerRadius="28"
+            WidthRequest="56"
+            HeightRequest="56"
+            Padding="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Visual="Material" />
+
+</ContentView>
