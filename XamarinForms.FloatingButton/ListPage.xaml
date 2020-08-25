@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:floatingButton="clr-namespace:XamarinForms.FloatingButton;assembly=XamarinForms.FloatingButton"
+             x:Class="XamarinForms.FloatingButton.ListPage"
+             x:Name="ListPageRoot">
+    
+    <Grid>
+        
+        <ListView x:Name="ListView"
+                  SelectionMode="None"
+                  ItemTapped="ListView_OnItemTapped">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+        <floatingButton:FloatingButton TextColor="White"
+                                       BackgroundColor="Blue"
+                                       VerticalOptions="End"
+                                       HorizontalOptions="End"
+                                       Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"
+                                       Clicked="FloatingButton_OnClicked"
+                                       Margin="25"/>
+        
+    </Grid>
+    
+</ContentPage>

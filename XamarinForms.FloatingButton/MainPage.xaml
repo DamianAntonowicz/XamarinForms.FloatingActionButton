@@ -1,52 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:awesome="clr-namespace:FontAwesome"
              mc:Ignorable="d"
              x:Class="XamarinForms.FloatingButton.MainPage">
 
-    <ContentPage.Resources>
 
-        <FontImageSource x:Key="FontImageSourcePlusGlyph"
-                         Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
-                         Color="White"
-                         FontFamily="FontAwesomeSolid">
-            <FontImageSource.Size>
-                <OnPlatform x:TypeArguments="x:Double">
-                    <On Platform="Android"
-                        Value="30"/>
-                    <On Platform="iOS"
-                        Value="60"/>
-                </OnPlatform>
-            </FontImageSource.Size>
-        </FontImageSource>
-
-    </ContentPage.Resources>
-
-    <StackLayout VerticalOptions="Center">
-
-        <Button Text="reset"
-                Clicked="PlayAnimationReset_Clicked"/>
-
-        <Button Text="play"
-                Clicked="PlayAnimation_Clicked"/>
-
-        <Button x:Name="FloatingButton"
-                ImageSource="{StaticResource FontImageSourcePlusGlyph}"
-                TextColor="White"
-                Scale="0"
-                BackgroundColor="Blue"
-                FontSize="50"
-                CornerRadius="28"
-                WidthRequest="56"
-                HeightRequest="56"
-                Padding="0"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Visual="Material"/>
-
-    </StackLayout>
+    <Button Text="navigate to list"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="ButtonNavigateToListPage_Clicked" />
 
 </ContentPage>
