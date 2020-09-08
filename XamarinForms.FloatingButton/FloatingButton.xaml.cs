@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace XamarinForms.FloatingButton
 {
@@ -73,22 +77,30 @@ namespace XamarinForms.FloatingButton
             page.Disappearing += Page_Disappearing;
         }
 
-        private void Page_Appearing(object sender, EventArgs e)
+        private async void Page_Appearing(object sender, EventArgs e)
         {
-            Button.Scale = 0;
-            Button.ScaleTo(1, easing: Easing.SpringOut);
+            if (DeviceInfo.Platform == DevicePlatform.Android)
+            {
+                await Task.Delay(300);
+            }
+
+            await Shadows.ScaleTo(1, easing: Easing.SpringOut);
         }
 
         private void Page_Disappearing(object sender, EventArgs e)
         {
-            // Button.Scale = 0;
-            // sprawdzic na Androidzie WordPress jak wyglada animacja FloatingButtona przy wychodzeniu z widoku
-            Button.ScaleTo(0, easing: Easing.SpringOut);
+            Shadows.ScaleTo(0, easing: Easing.SpringIn);
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
             Clicked?.Invoke(this, EventArgs.Empty);
+
+            if (Command != null &&
+                Command.CanExecute(null))
+            {
+                Command.Execute(null);
+            }
         }
     }
 }

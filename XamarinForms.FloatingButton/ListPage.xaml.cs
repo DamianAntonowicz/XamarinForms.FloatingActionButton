@@ -22,7 +22,7 @@ namespace XamarinForms.FloatingButton
             
             for (int i = 0; i < 20; i++)
             {
-                items.Add(i + " Lorem ipsum dolor sit amet, consectetur adipiscing elit");//". Cras eget iaculis Tappeda quam eget arcu eleifend maximus. Morbi in ultrices ante, non faucibus mauris.");
+                items.Add(i + " Lorem ipsum dolor sit amet, consectetur adipiscing elit");
             }
 
             ListView.ItemsSource = items;

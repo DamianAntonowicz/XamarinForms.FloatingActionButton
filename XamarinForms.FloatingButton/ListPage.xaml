@@ -23,7 +23,7 @@
         </ListView>
         
         <floatingButton:FloatingButton TextColor="White"
-                                       BackgroundColor="Blue"
+                                       BackgroundColor="Red"
                                        VerticalOptions="End"
                                        HorizontalOptions="End"
                                        Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"

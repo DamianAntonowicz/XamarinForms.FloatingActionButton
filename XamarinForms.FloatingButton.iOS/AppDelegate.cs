@@ -24,6 +24,7 @@ namespace XamarinForms.FloatingButton.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.Forms.FormsMaterial.Init();
+            Sharpnado.Shades.iOS.iOSShadowsRenderer.Initialize();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
