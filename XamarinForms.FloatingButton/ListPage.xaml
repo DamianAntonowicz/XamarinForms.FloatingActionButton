@@ -3,12 +3,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:floatingButton="clr-namespace:XamarinForms.FloatingButton;assembly=XamarinForms.FloatingButton"
+             Title="Elements"
              x:Class="XamarinForms.FloatingButton.ListPage"
              x:Name="ListPageRoot">
     
     <Grid>
         
         <ListView x:Name="ListView"
+                  Background="White"
                   SelectionMode="None"
                   ItemTapped="ListView_OnItemTapped">
             

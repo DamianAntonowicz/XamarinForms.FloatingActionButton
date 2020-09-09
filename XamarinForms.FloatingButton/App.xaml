@@ -7,5 +7,18 @@
     mc:Ignorable="d"
     x:Class     ="XamarinForms.FloatingButton.App">
     <Application.Resources>
+
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor"
+                    Value="White" />
+            <Setter Property="BarTextColor"
+                    Value="Black" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="Black" />
+        </Style>
+
     </Application.Resources>
 </Application>

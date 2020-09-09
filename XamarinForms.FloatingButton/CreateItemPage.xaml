@@ -2,6 +2,7 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="New item"
              x:Class="XamarinForms.FloatingButton.CreateItemPage">
 
     <Label Text="Create new item here ;)"
