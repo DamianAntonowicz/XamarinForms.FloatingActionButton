@@ -7,8 +7,8 @@
              mc:Ignorable="d"
              x:Class="XamarinForms.FloatingButton.MainPage">
 
-
     <Button Text="navigate to list"
+            Visual="Material"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Clicked="ButtonNavigateToListPage_Clicked" />
