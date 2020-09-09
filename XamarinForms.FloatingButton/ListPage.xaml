@@ -24,13 +24,13 @@
             
         </ListView>
         
-        <floatingButton:FloatingButton TextColor="White"
-                                       BackgroundColor="Red"
-                                       VerticalOptions="End"
-                                       HorizontalOptions="End"
-                                       Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"
-                                       Clicked="FloatingButton_OnClicked"
-                                       Margin="25"/>
+        <floatingButton:FloatingActionButton TextColor="White"
+                                             BackgroundColor="Red"
+                                             VerticalOptions="End"
+                                             HorizontalOptions="End"
+                                             Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"
+                                             Clicked="FloatingButton_OnClicked"
+                                             Margin="25"/>
         
     </Grid>
     

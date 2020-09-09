@@ -3,15 +3,15 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:awesome="clr-namespace:FontAwesome"
-             x:Class="XamarinForms.FloatingButton.FloatingButton"
+             x:Class="XamarinForms.FloatingButton.FloatingActionButton"
              xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
-             x:Name="FloatingButtonRoot">
+             x:Name="FloatingActionButtonRoot">
 
     <ContentView.Resources>
 
         <FontImageSource x:Key="FontImageSourcePlusGlyph"
                          Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
-                         Color="{Binding TextColor, Source={x:Reference FloatingButtonRoot}}"
+                         Color="{Binding TextColor, Source={x:Reference FloatingActionButtonRoot}}"
                          Size="20"
                          FontFamily="FontAwesomeSolid"/>
 
@@ -25,10 +25,10 @@
                                         Color=Black}">
 
         <Button ImageSource="{StaticResource FontImageSourcePlusGlyph}"
-                TextColor="{Binding TextColor, Source={x:Reference FloatingButtonRoot}}"
+                TextColor="{Binding TextColor, Source={x:Reference FloatingActionButtonRoot}}"
                 Clicked="Button_Clicked"
-                BackgroundColor="{Binding BackgroundColor, Source={x:Reference FloatingButtonRoot}}"
-                Command="{Binding Command, Source={x:Reference FloatingButtonRoot}}"
+                BackgroundColor="{Binding BackgroundColor, Source={x:Reference FloatingActionButtonRoot}}"
+                Command="{Binding Command, Source={x:Reference FloatingActionButtonRoot}}"
                 FontSize="50"
                 CornerRadius="28"
                 WidthRequest="56"

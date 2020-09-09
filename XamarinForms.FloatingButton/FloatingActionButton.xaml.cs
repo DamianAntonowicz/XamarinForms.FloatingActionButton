@@ -8,7 +8,7 @@ using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace XamarinForms.FloatingButton
 {
-    public partial class FloatingButton : ContentView
+    public partial class FloatingActionButton : ContentView
     {
         #region CommandProperty
 
@@ -16,7 +16,7 @@ namespace XamarinForms.FloatingButton
             BindableProperty.Create(
                 propertyName: nameof(Command),
                 returnType: typeof(ICommand),
-                declaringType: typeof(FloatingButton));
+                declaringType: typeof(FloatingActionButton));
 
         public ICommand Command
         {
@@ -32,7 +32,7 @@ namespace XamarinForms.FloatingButton
             BindableProperty.Create(
                 propertyName: nameof(TextColor),
                 returnType: typeof(Color),
-                declaringType: typeof(FloatingButton),
+                declaringType: typeof(FloatingActionButton),
                 defaultValue: Color.White);
 
         public Color TextColor
@@ -49,7 +49,7 @@ namespace XamarinForms.FloatingButton
             BindableProperty.Create(
                 propertyName: nameof(BackgroundColor),
                 returnType: typeof(Color),
-                declaringType: typeof(FloatingButton),
+                declaringType: typeof(FloatingActionButton),
                 defaultValue: Color.Black);
 
         public new Color BackgroundColor
@@ -62,7 +62,7 @@ namespace XamarinForms.FloatingButton
 
         public event EventHandler Clicked; 
         
-        public FloatingButton()
+        public FloatingActionButton()
         {
             InitializeComponent();
         }
