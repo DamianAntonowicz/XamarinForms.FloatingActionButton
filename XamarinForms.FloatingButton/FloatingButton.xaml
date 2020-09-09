@@ -12,16 +12,8 @@
         <FontImageSource x:Key="FontImageSourcePlusGlyph"
                          Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
                          Color="{Binding TextColor, Source={x:Reference FloatingButtonRoot}}"
-                         FontFamily="FontAwesomeSolid">
-            <FontImageSource.Size>
-                <OnPlatform x:TypeArguments="x:Double">
-                    <On Platform="Android"
-                        Value="20" />
-                    <On Platform="iOS"
-                        Value="25" />
-                </OnPlatform>
-            </FontImageSource.Size>
-        </FontImageSource>
+                         Size="20"
+                         FontFamily="FontAwesomeSolid"/>
 
     </ContentView.Resources>
 
