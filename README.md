@@ -8,8 +8,8 @@ Used libraries:
 
 # iOS
 
-![](docs/FloatingActionButton_ios.gif)
+![iOS](docs/FloatingActionButton_ios.gif)
 
 # Android
 
-![](docs/FloatingActionButton_Android.gif)
+![Android](docs/FloatingActionButton_Android.gif)
