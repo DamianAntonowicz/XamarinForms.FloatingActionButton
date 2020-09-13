@@ -72,23 +72,32 @@ namespace XamarinForms.FloatingButton
             
             var page = await this.GetParentAsync<Page>();
 
+            await WaitForPageAnimationEndsAsync();
+            await ShowButtonAsync();
+            
             page.Appearing += Page_Appearing;
             page.Disappearing += Page_Disappearing;
         }
 
         private async void Page_Appearing(object sender, EventArgs e)
         {
-            if (DeviceInfo.Platform == DevicePlatform.Android)
-            {
-                await Task.Delay(300);
-            }
-
-            await Shadows.ScaleTo(1, easing: Easing.SpringOut);
+            await WaitForPageAnimationEndsAsync();
+            await ShowButtonAsync();
         }
 
         private void Page_Disappearing(object sender, EventArgs e)
         {
             Shadows.ScaleTo(0, easing: Easing.SpringIn);
+        }
+        
+        private async Task ShowButtonAsync()
+        {
+            await Shadows.ScaleTo(1, easing: Easing.SpringOut);
+        }
+        
+        private async Task WaitForPageAnimationEndsAsync()
+        {
+            await Task.Delay(300);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
