@@ -8,7 +8,7 @@ Used libraries:
 
 # iOS
 
-![iOS](docs/FloatingActionButton_ios.gif)
+![iOS](docs/FloatingActionButton_iOS.gif)
 
 # Android
 
