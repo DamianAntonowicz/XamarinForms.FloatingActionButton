@@ -1,6 +1,6 @@
 using Xamarin.Forms;
 
-namespace XamarinForms.FloatingButton
+namespace XamarinForms.FloatingActionButton
 {
     public partial class CreateItemPage : ContentPage
     {

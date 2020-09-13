@@ -11,7 +11,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>XamarinForms.FloatingButton.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XamarinForms.FloatingButton.iOS</AssemblyName>
+    <AssemblyName>XamarinForms.FloatingActionButton.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -129,11 +129,11 @@
       <Version>4.8.0.1269</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\XamarinForms.FloatingButton\XamarinForms.FloatingButton.csproj">
-      <Project>{7C9A609C-7A98-4F8E-A3CB-D168467CD197}</Project>
-      <Name>XamarinForms.FloatingButton</Name>
+    <ProjectReference Include="..\XamarinForms.FloatingActionButton\XamarinForms.FloatingActionButton.csproj">
+      <Project>{7c9a609c-7a98-4f8e-a3cb-d168467cd197}</Project>
+      <Name>XamarinForms.FloatingActionButton</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

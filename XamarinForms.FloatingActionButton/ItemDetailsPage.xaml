@@ -3,7 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Details"
-             x:Class="XamarinForms.FloatingButton.ItemDetailsPage">
+             x:Class="XamarinForms.FloatingActionButton.ItemDetailsPage">
     
     <Label x:Name="Label" 
            VerticalOptions="Center"

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace XamarinForms.FloatingButton
+namespace XamarinForms.FloatingActionButton
 {
     public partial class ListPage : ContentPage
     {

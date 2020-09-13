@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace XamarinForms.FloatingButton
+namespace XamarinForms.FloatingActionButton
 {
     public partial class MainPage : ContentPage
     {

@@ -2,16 +2,16 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:floatingButton="clr-namespace:XamarinForms.FloatingButton;assembly=XamarinForms.FloatingButton"
-             xmlns:awesome="clr-namespace:FontAwesome;assembly=XamarinForms.FloatingButton"
+             xmlns:fontAwesome="clr-namespace:FontAwesome;assembly=XamarinForms.FloatingActionButton"
+             xmlns:floatingActionButton="clr-namespace:XamarinForms.FloatingActionButton;assembly=XamarinForms.FloatingActionButton"
              Title="Elements"
-             x:Class="XamarinForms.FloatingButton.ListPage"
+             x:Class="XamarinForms.FloatingActionButton.ListPage"
              x:Name="ListPageRoot">
     
     <ContentPage.Resources>
 
         <FontImageSource x:Key="FontImageSourcePlusGlyph"
-                         Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
+                         Glyph="{x:Static fontAwesome:FontAwesomeIcons.Plus}"
                          Color="White"
                          Size="20"
                          FontFamily="FontAwesomeSolid"/>
@@ -36,13 +36,13 @@
             
         </ListView>
         
-        <floatingButton:FloatingActionButton BackgroundColor="Red"
-                                             ImageSource="{StaticResource FontImageSourcePlusGlyph}"
-                                             VerticalOptions="End"
-                                             HorizontalOptions="End"
-                                             Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"
-                                             Clicked="FloatingButton_OnClicked"
-                                             Margin="25"/>
+        <floatingActionButton:FloatingActionButton BackgroundColor="Red"
+                                                   ImageSource="{StaticResource FontImageSourcePlusGlyph}"
+                                                   VerticalOptions="End"
+                                                   HorizontalOptions="End"
+                                                   Command="{Binding TestCommand, Source={x:Reference ListPageRoot}}"
+                                                   Clicked="FloatingButton_OnClicked"
+                                                   Margin="25"/>
         
     </Grid>
     

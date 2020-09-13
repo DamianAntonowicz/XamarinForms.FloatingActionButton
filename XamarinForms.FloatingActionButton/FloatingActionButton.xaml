@@ -2,7 +2,7 @@
 
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinForms.FloatingButton.FloatingActionButton"
+             x:Class="XamarinForms.FloatingActionButton.FloatingActionButton"
              xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
              xmlns:system="clr-namespace:System;assembly=netstandard"
              x:Name="FloatingActionButtonRoot">

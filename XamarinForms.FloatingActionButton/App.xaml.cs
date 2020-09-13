@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XamarinForms.FloatingButton
+namespace XamarinForms.FloatingActionButton
 {
     public partial class App : Application
     {

@@ -8,7 +8,7 @@
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>XamarinForms.FloatingButton.Droid</RootNamespace>
-    <AssemblyName>XamarinForms.FloatingButton.Android</AssemblyName>
+    <AssemblyName>XamarinForms.FloatingActionButton.Android</AssemblyName>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -91,9 +91,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinForms.FloatingButton\XamarinForms.FloatingButton.csproj">
-      <Project>{7C9A609C-7A98-4F8E-A3CB-D168467CD197}</Project>
-      <Name>XamarinForms.FloatingButton</Name>
+    <ProjectReference Include="..\XamarinForms.FloatingActionButton\XamarinForms.FloatingActionButton.csproj">
+      <Project>{7c9a609c-7a98-4f8e-a3cb-d168467cd197}</Project>
+      <Name>XamarinForms.FloatingActionButton</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

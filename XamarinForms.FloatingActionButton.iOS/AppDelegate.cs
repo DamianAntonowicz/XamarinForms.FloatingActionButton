@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using XamarinForms;
+using XamarinForms.FloatingActionButton;
 
 namespace XamarinForms.FloatingButton.iOS
 {

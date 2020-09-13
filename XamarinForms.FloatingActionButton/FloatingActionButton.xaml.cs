@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
-namespace XamarinForms.FloatingButton
+namespace XamarinForms.FloatingActionButton
 {
     public partial class FloatingActionButton : ContentView
     {
