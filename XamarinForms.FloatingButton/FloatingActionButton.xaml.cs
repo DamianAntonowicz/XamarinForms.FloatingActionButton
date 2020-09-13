@@ -25,22 +25,21 @@ namespace XamarinForms.FloatingButton
         }
 
         #endregion
-        
-        #region TextColorProperty
 
-        public static readonly BindableProperty TextColorProperty =
+        #region ImageSourceProperty
+
+        public static readonly BindableProperty ImageSourceProperty =
             BindableProperty.Create(
-                propertyName: nameof(TextColor),
-                returnType: typeof(Color),
-                declaringType: typeof(FloatingActionButton),
-                defaultValue: Color.White);
+                propertyName: nameof(ImageSource),
+                returnType: typeof(ImageSource),
+                declaringType: typeof(FloatingActionButton));
 
-        public Color TextColor
+        public ImageSource ImageSource
         {
-            get => (Color) GetValue(TextColorProperty);
-            set => SetValue(TextColorProperty, value);
+            get => (ImageSource) GetValue(ImageSourceProperty);
+            set => SetValue(ImageSourceProperty, value);
         }
-        
+
         #endregion
         
         #region BackgroundColorProperty

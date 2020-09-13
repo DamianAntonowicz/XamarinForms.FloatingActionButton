@@ -2,20 +2,9 @@
 
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:awesome="clr-namespace:FontAwesome"
              x:Class="XamarinForms.FloatingButton.FloatingActionButton"
              xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
              x:Name="FloatingActionButtonRoot">
-
-    <ContentView.Resources>
-
-        <FontImageSource x:Key="FontImageSourcePlusGlyph"
-                         Glyph="{x:Static awesome:FontAwesomeIcons.Plus}"
-                         Color="{Binding TextColor, Source={x:Reference FloatingActionButtonRoot}}"
-                         Size="20"
-                         FontFamily="FontAwesomeSolid"/>
-
-    </ContentView.Resources>
 
     <sh:Shadows x:Name="Shadows"
                 CornerRadius="30"
@@ -24,8 +13,7 @@
                                         Opacity=0.4,
                                         Color=Black}">
 
-        <Button ImageSource="{StaticResource FontImageSourcePlusGlyph}"
-                TextColor="{Binding TextColor, Source={x:Reference FloatingActionButtonRoot}}"
+        <Button ImageSource="{Binding ImageSource, Source={x:Reference FloatingActionButtonRoot}}"
                 Clicked="Button_Clicked"
                 BackgroundColor="{Binding BackgroundColor, Source={x:Reference FloatingActionButtonRoot}}"
                 Command="{Binding Command, Source={x:Reference FloatingActionButtonRoot}}"
