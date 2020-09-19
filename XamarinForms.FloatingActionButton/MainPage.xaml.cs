@@ -19,5 +19,10 @@ namespace XamarinForms.FloatingActionButton
         {
             Navigation.PushAsync(new ListPage());
         }
+
+        private void ButtonDefaultShadows_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new DefaultShadowsPage());
+        }
     }
 }

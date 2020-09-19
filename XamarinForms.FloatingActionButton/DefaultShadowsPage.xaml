@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fontAwesome="clr-namespace:FontAwesome;assembly=XamarinForms.FloatingActionButton"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="XamarinForms.FloatingActionButton.DefaultShadowsPage">
+
+    <ContentPage.Resources>
+
+        <FontImageSource x:Key="FontImageSourcePlusGlyph"
+                         Glyph="{x:Static fontAwesome:FontAwesomeIcons.Plus}"
+                         Color="White"
+                         Size="20"
+                         FontFamily="FontAwesomeSolid"/>
+
+    </ContentPage.Resources>
+
+    <Button FontSize="50"
+            android:VisualElement.Elevation="10"
+            ios:VisualElement.IsShadowEnabled="true"
+            ios:VisualElement.ShadowColor="Purple"
+            ios:VisualElement.ShadowOpacity="0.7"
+            ios:VisualElement.ShadowRadius="12"
+            ios:VisualElement.ShadowOffset="0,10"
+            ImageSource="{StaticResource FontImageSourcePlusGlyph}"
+            CornerRadius="28"
+            WidthRequest="56"
+            HeightRequest="56"
+            Padding="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Visual="Material" />
+
+</ContentPage>

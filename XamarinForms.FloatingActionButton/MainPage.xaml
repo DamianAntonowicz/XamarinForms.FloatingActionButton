@@ -5,14 +5,24 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="XamarinForms.FloatingActionButton.MainPage"
-             NavigationPage.HasNavigationBar="True"
-             NavigationPage.BarBackgroundColor="Red">
+             x:Class="XamarinForms.FloatingActionButton.MainPage">
 
-    <Button Text="navigate to list"
-            Visual="Material"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Clicked="ButtonNavigateToListPage_Clicked" />
+    <Grid HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand">
+
+        <Button Text="navigate to list"
+                Visual="Material"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="ButtonNavigateToListPage_Clicked" />
+
+        <Button Text="default shadows"
+                Visual="Material"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="0,0,0,20"
+                Clicked="ButtonDefaultShadows_Clicked" />
+
+    </Grid>
 
 </ContentPage>
