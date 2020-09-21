@@ -1,4 +1,4 @@
-# Floating Action Button for Xamarin.Forms 
+# Animated Floating Action Button for Xamarin.Forms 
 
 This repository shows how to create Floating Action Button in Xamarin.Forms, which animates when page is appearing.
 
